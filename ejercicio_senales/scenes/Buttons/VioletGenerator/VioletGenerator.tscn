@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dncxujshbxt8f"]
+[gd_scene load_steps=3 format=3 uid="uid://dncxujshbxt8f"]
 
 [ext_resource type="Texture2D" uid="uid://c0f3vvctal5va" path="res://assets/block_violet.png" id="1"]
+[ext_resource type="Script" uid="uid://bks5ukjfep844" path="res://scenes/Buttons/VioletGenerator/violet_generator.gd" id="2_r2fdk"]
 
 [node name="VioletGenerator" type="TextureButton"]
+offset_left = 836.0
+offset_top = 72.0
+offset_right = 964.0
+offset_bottom = 200.0
 texture_normal = ExtResource("1")
+script = ExtResource("2_r2fdk")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

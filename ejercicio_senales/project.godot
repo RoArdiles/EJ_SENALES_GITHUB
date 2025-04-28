@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="EJ_SENALES_GODOT"
+run/main_scene="uid://bfoq3euaj21i3"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
 [rendering]

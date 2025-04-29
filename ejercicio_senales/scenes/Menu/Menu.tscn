@@ -48,3 +48,5 @@ offset_right = 668.0
 offset_bottom = 144.0
 text = "Cantidad de Instancias:
 "
+
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]

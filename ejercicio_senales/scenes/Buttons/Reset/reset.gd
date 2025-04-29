@@ -13,3 +13,4 @@ func _process(delta: float) -> void:
 
 func _on_button_down():
 	get_tree().call_group("blocks", "delete")
+	

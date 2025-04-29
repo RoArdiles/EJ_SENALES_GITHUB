@@ -18,8 +18,11 @@ func _ready():
 	red_generator.connect("button_down", Callable(self, "count_new_instance"))
 	violet_generator.connect("button_down", Callable(self, "count_new_instance"))
 
+func delete():
+	instancesCount = 0
+	count_label.text = INSTANCES_TEXT + str(instancesCount)
 
 
-#func count_new_instance():
-#	instancesCount += 1
-#	count_label.text = str(instancesCount)
+
+func _on_reset_pressed():
+	delete()

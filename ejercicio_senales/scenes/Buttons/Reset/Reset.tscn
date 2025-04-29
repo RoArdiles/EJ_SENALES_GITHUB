@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cey6fuiebmhpe"]
+[gd_scene load_steps=3 format=3 uid="uid://cey6fuiebmhpe"]
 
 [ext_resource type="Texture2D" uid="uid://dlrbytvyhp1kb" path="res://assets/restart.png" id="1"]
+[ext_resource type="Script" uid="uid://t6ef4p45m7pn" path="res://scenes/Buttons/Reset/reset.gd" id="2_vxotw"]
 
 [node name="Reset" type="TextureButton"]
 offset_left = 475.0
@@ -8,3 +9,6 @@ offset_top = 160.0
 offset_right = 627.0
 offset_bottom = 227.0
 texture_normal = ExtResource("1")
+script = ExtResource("2_vxotw")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
